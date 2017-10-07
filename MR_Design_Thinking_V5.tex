@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs - Caracteres na impressão
+%\usepackage[T1]{inputenc} % Caracteres portugueses no Input Texto
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+%\usepackage[portuguese]{babel} % Idioma portugues
+\usepackage[utf8]{inputenc}    % usar caracteres portugueses no input OU usepackage[T1]{inputenc}
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{float}   % to Fix figures at the page
+
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Design Thinking $\bullet$ Out 2017 $\bullet$ Universidade Portucalense} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+%\usepackage{lipsum}    % Referencias bibliograficas
+\usepackage{natbib}    % Referencias bibliograficas
+\bibliographystyle{plainnat}
+
+\usepackage{graphicx}
+\usepackage{sidecap}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Design Thinking no Desenvolvimento de Software} % Article title
+\author{%
+\textsc{Manuel Robalinho}\thanks{Aluno do Mestrado de Informática da UPT} \\[1ex] % Your name
+\normalsize Universidade Portucalense Infante D. Henrique \\ % Your institution
+\normalsize \href{mailto:manuel.robalinho@gmail.com}{Manuel.Robalinho@gmail.com} % Your email address
+%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+%\normalsize University of Utah \\ % Second author's institution
+%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{\today} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+%----------------------------------------------------------------------------------------
+\begin{abstract}
+
+\noindent 
+A solução de problemas técnicos, de design sempre foi buscar soluções mais na área da engenharia, e no cálculo matemático que na área da arquitetura e da inovação estética ou funcional. 
+Os métodos utilizados na gestão de projetos, como exemplo os descritos no PMBOK, nos apresentam a solução de um problema como um projeto, com objetivo bem definido, com a solução já projetada em termos de tarefas, tempos de execução das mesmas e orçamento definido. 
+O sucesso do projeto é o cumprimento do objetivo definido em contrato, nos prazos e orçamento previstos. 
+Num mundo corporativo tão competitivo, o PMBOK realmente parece o caminho certo para a leitura da execução de um projeto, seja ele de engenharia civil, aeronáutica, espacial, automóvel, software, ou algum evento do nosso quotidiano que exija prazos e orçamento para o cumprimento das tarefas. 
+O Design Thinking apresenta-nos uma outra leitura, dando primazia ao encontro da solução para o problema, conjugando a parte da engenharia do processo com a arquitetura e o design. Colocando todos os intervenientes no encontro da solução, num confronto de ideias que possam apresentar soluções mais criativa e inovadoras, sem perder de vista a segurança, funcionalidade e qualidade do produto que se pretende construir no âmbito do projeto. 
+A ideia é que antes de aplicar uma solução técnica, já descrita em vários manuais, que se possa adoptar um brainstorming de ideias, e colocar todos os intervenientes no pensar o problema fora da sua zona de conforto técnico e profissional.
+
+\end{abstract}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introdução}
+
+\lettrine[nindent=0em,lines=3]{M} 
+%\blindtext % Dummy text
+ichael Porter, um dos grandes mestres da estratégia empresarial, sugere que se não é possível ou desejável para a organização competir por preços, resta competir por diferenciação ou pela busca de nichos cada vez mais especializados de mercado \citep{Porter1990}. 
+\newline \indent A inovação constante tem sido um dos caminhos buscados como diferencial competitivo diante da mesmice de produtos massificados e baratos. Entretanto, inovar não tem sido tarefa das mais fáceis, mormente para empresas mais tradicionais. \citep{Drucker1954}, outro mestre da gestão, afirma que existem apenas duas funções importantes nos negócios: o marketing e a inovação; o resto são custos. Desta forma, Drucker chama a atenção para a importância da inovação incorporada aos produtos e aos negócios.
+\newline \indent Para encontrar novas soluções teremos de repensar tudo o que foi escrito sobre o problema. De certa forma não devemos simplesmente copiar soluções técnicas, mas pensar como seria se fosse feito de outra perspectiva.
+\citep{Vagner2017} O criativo autor Raul Seixas\footnote{Raul Santos Seixas (Salvador, 28 de junho de 1945 — São Paulo, 21 de agosto de 1989) foi um cantor e compositor brasileiro, frequentemente considerado um dos pioneiros do rock brasileiro.} dizia que a desobediência é uma virtude necessária à criatividade. A liberdade subversiva de apontar para o desconhecido, de trilhar um caminho nunca antes desbravado, de buscar materializar o que ninguém jamais deu vida, essa inquietude de alma e coração típica das mentes inventivas é condição para aflorar a capacidade criativa do ser humano na solução de problemas. É aqui que o \textbf{Design Thinking} fornece uma perspectiva que muda a forma de encontrar novos caminhos para a solução dos problemas, ou para dar um novo caminho que poderá ser a solução para outros problemas que não estavam inventariados nos nossos objetivos de projeto.
+\newline \indent \citep{Porter1990} Afirmava que na maioria dos casos, a empresa tem que forçar os concorrentes a comprometer seus objetivos para que a empresa atinja os seus. Para isso, precisa encontrar uma estratégia onde se possa defender contra competidores existentes e novos participantes através de algumas vantagens distintas. A análise dos objetivos dos competidores é crucial, porque ajuda a pensar melhor a estratégia, evita movimentos estratégicos que atinjam uma guerra amarga, e pode ameaçar a capacidade dos concorrentes de atingir os principais objetivos. 
+\newline \indent Nestas citações de Porter revêm-se claramente posições já anteriormente descritas no livro “A Arte da Guerra”: “Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece, mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas”.\citep{Tzu1772} Este é um trecho que diz muito sobre o ponto que abordamos no Design Thinking.
+\newline \indent \citep{Porter1990}, sugere que se não é possível ou desejável para a organização competir por preços, resta competir por diferenciação ou pela busca de nichos cada vez mais especializados de mercado.
+\newline \indent Segundo \citep{Niemeyer2000}, entre artista, tecnólogo e gestor, o designer flutua e navega à deriva, sem profundidade. Não sulca a terra, não deita raízes, só deixa marcas .
+
+%------------------------------------------------
+
+\section{Análise Histórica} 
+
+A etmologia do termo \textbf{Design} traz-nos as seguintes descrições: 
+\newline \indent a) Designare (latim) – designar ou desenhar/representar
+\newline \indent b) Design (inglês) – plano, desígnio, intenção, ordenar, projeto.
+\newline \indent c) Draw (inglês) – desenhar
+\newline \indent d) Diseño (espanhol) – atividade projetual
+\newline Históricamente o termo evoluiu da concepção e execução do artefato (artesanato) para o termo Design – projetar para fabricação.
+\newline \indent a) No século XV o termo era associado na Europa a tipografia/ imprensa.
+\newline \indent b) No século XVII o termo era associado a fabricação de peças para relógio e aparece pela primeira vez no Oxford English Dictionary, com o termo designer.
+\newline \indent c) No século XIX na Europa os trabalhadores se intitulam designers na indústria têxtil. Também aparecem as primeiras escolas de design. %\citep{Wanderley2012}
+\newline \newline \indent Nos anos 60 surge a ICSDI International Council of Societies of Industrial Design. A ICSDI realizou quatro seminários (Bélgica, Alemanha, EUA, Argentina) para examinar as questões relativas aos padrões acadêmicos para a crescente profissão de design industrial, a fim de fazer recomendações e propor padrões.
+No seu propósito têm projeto de criação de um novo tipo de seminário reunindo designers industriais de todo o mundo o tema de design de significância regional e internacional; o que resultou no primeiro workshop de Interdesign em Minsk. 
+Em 1973 no Congresso de Quioto organizado pela Japan Industrial Designers Association, continuaram a consolidar o papel da ICSDI no designer da construção. O evento foi revolucionário, pois trouxe os mundos do design ocidental e asiático pela primeira vez no solo asiático.\citep{WDO}.
+\newline \indent Segundo \citep{Porter1990} nas décadas de 70 e 80 os gerentes procuravam formas concretas para enfrentar novas estratégias para os negócios. Começava a aparecer um novo ímpeto para o pensamento econômico. A teoria econômica da concorrência no tempo era muito estilizado. Os economistas concentraram-se principalmente nas indústrias; as empresas foram presumidas iguais ou diferiam principalmente em tamanho ou em diferenças inexplicadas de eficiência. A visão predominante da estrutura da indústria englobava a concentração de vendedores e algumas fontes de barreiras à entrada. Os gerentes estavam quase ausentes em modelos econômicos, com praticamente nenhuma margem de ação para afetar os resultados competitivos. Economistas estavam preocupados principalmente com as consequências da política social e pública, com o impacto de estruturas industriais alternativas e padrões de concorrência.
+\newline \indent \citep{Drucker1986}, outro mestre da gestão, afirma que existem apenas duas funções importantes nos negócios: o marketing e a inovação; o resto são custos. Desta forma, Drucker chama a atenção para a importância da inovação incorporada aos produtos e aos negócios. Para o autor, a criatividade não depende de inspiração, mas de estudo árduo, de um ato de vontade. Assim como a pesquisa sistemática pode resultar na invenção, também pode, e precisa, haver uma busca de oportunidades.
+\newline \indent \citep{Simon1996} foi quem primeiro introduziu o termo "pensamento de design" em seu livro The Science of Artificial em 1996. Segundo \citep{Simon1996} a teoria do design visa ampliar as capacidades de computadores para auxiliar o projeto, aproveitando as ferramentas de inteligência artificial e pesquisa de operações. Por isso, pesquisas sobre diversos aspectos do design assistido por computador está sendo perseguido com crescente intensidade em informática, engenharia e departamentos de arquitetura e em grupos de pesquisa de operações em escolas de negócios.
+\newline \indent \citep{Brown2008}, presidente da IDEO, define o pensamento de design como "uma metodologia que permeia todo o espectro de atividades de inovação com um espírito de design centrado no ser humano". Pensar como um designer pode transformar o modo como desenvolvemos produtos, serviços, processos e até estratégias.
+\newline \indent \citep{Thomas2017} , presidente do Design Management Institute (DMI), tenta descrever o pensamento de design como essencialmente um processo humano focado em inovação que enfatiza a observação, colaboração, aprendizado rápido, visualização de idéias, protótipos de conceito rápido e análise simultânea de negócios, que, em última análise, influencia a inovação e a estratégia de negócios.
+\newline \indent Por outro lado, a \citep{Cross2011} resume o pensamento de design como  habilidades de resolução de problemas mal definidas, adotando soluções voltadas para estratégias cognitivas usando o pensamento abdutivo e usando suporte para modelagem não-verbal.
+\newline \indent Segundo \citep{Cross2011} ,os defensores do pensamento de design na gestão organizacional, caracterizam o pensamento de design como uma abordagem iterativa centrada no usuário que promove a criatividade e a inovação. O pensamento de design agora engloba não só o design das coisas, mas também atividades, serviços, sistemas e ambientes.
+\newline \indent Para \citep{Buchanan1992} o design continua a expandir os seus significados e conexões, revelando dimensões inesperadas na prática, bem como a compreensão. Isso segue a tendência do pensamento de design no século XX, pois vimos o design crescer a partir de uma atividade comercial para uma pesquisa segmentada, para a pesquisa técnica e para o que agora deve ser reconhecido como uma nova arte liberal de tecnologia e cultura.
+\newline \indent Como cita \citep{Niemeyer2000}, ao longo do tempo o design tem sido entendido segundo três tipos distintos de prática e conhecimento:
+\newline \indent 1. No primeiro o design é visto como atividade artística, em que é valorizado no profissional o seu compromisso como artífice, com vantagem do uso sistemático. \newline \indent 2. No segundo entende-se o design como um invento, um planeamento em que o designer tem compromisso prioritário com a produtividade do processo de fabricação e com a atualização tecnológica. 
+\newline \indent 3. Finalmente, no terceiro aparece o design como coordenação, onde o designer tem a função de integrar os aportes de diferentes especialistas, desde a especificação de matéria-prima, passando pela produção à utilização e ao destino final do produto. Neste caso a interdisciplinaridade é a tônica. ( ... ) estes conceitos tanto se sucederam como coexistiram, criando uma tensão entre as diferentes tendências simultâneas.
+\newline \indent Já \citep{Niemeyer2000} afirmava que a fábrica e a produção mudam face às novas tecnologias automatizadas ... Nesse contexto como ficam os processos de seleção de informação, resolução de problemas e tomada de decisão com o uso de ajudas informatizadas? O design do diálogo homem-computador abre toda uma nova área para pesquisas de ergonomia, em interação com a engenharia do conhecimento e com a engenharia de sistemas. 
+\newline\indent O termo Design Thinking foi mencionado pela primeira vez em 1992 em um artigo do renomado professor da Universidade de Carnegie Mellon Richard Buchanan denominado “Wicked problems in Design Thinking”. \citep{Buchanan1992}. Nesse artigo, o autor apresenta o potencial de abordagem do design em quatro frentes, permitindo que seja expandido a outras disciplinas: design na comunicação visual, design de produtos, design aplicado a serviços e uma abordagem na construção de melhores ambientes para as pessoas viverem e trabalharem. \citep{FutureJournal2016}
+
+%Text requiring further explanation\footnote{Example footnote}.
+
+%------------------------------------------------
+
+\section{Metodologia}
+
+\indent Como designer, Brown descobriu que um bom desenho nem sempre é suficiente para resolver problemas do produto e que muitas vezes nem o próprio produto resolve o problema do cliente. Estudando melhor os produtos que desenhava a pedido de seus clientes, ele percebeu que sua capacidade criativa poderia ir além do desenho e ajudar a repensar o negócio sob a perspectiva do consumidor final. A essência do conceito de design thinking como uma evolução do tradicional processo de design é colocada nos seguintes tópicos: \citep{Hashimoto}.
+\newline \indent A maioria dos métodos ou técnicas que se utilizam em Design Thinking, envolvem a externalização das ideias, configurando-as de forma que possam ser comparadas, classificadas e combinadas, avaliadas e compartilhadas. O pensamento não acontece apenas dentro do cérebro. Ele ocorre à medida que ideias fugazes se transformam em coisas tangíveis: palavras, esboços, protótipos e propostas. Cada vez mais o pensamento acontece entre grupos que trabalham juntos para atingir objetivos em comum.\citep{EllenLupton2013}
+\newline 
+%--- Figura ----
+\begin{figure}[H]  % H=  fix the figure here
+ \caption{Esquema representativo das etapas do processo de Design Thinking (Vianna 2012).}
+ \centering
+  \includegraphics[width=0.45\textwidth]%
+  {MR1.png}% picture filename 
+\end{figure}
+% ---- Fim figura ---
+
+
+\subsection{Imersão}
+
+\indent Essa é a primeira fase do processo de Design Thinking, na qual a equipe do projeto se aproxima do contexto do problema sob diferentes pontos de vista.\citep{Vianna2012}
+\newline \indent O processo de design é uma mistura de ações intuitivas e intencionais. Muitos designers começam pelo brainstorming, que consiste em uma busca incansável por ideias inovadoras  que ajuda a refinar o problema e a ampliar a forma como se pensa sobre ele.
+O brainstorming que foi inventado na década de 1950, rapidamente se tornou um método comum de ajudar as pessoas a pensarem de forma criativa, até mesmo pessoas que não se consideram minimamente criativas.\citep{EllenLupton2013}
+\newline O design é uma tarefa confusa. Os designers geram inúmeras ideias que não são usadas. Muitas vezes eles começam tudo de novo, retrocedendo e cometendo erros. Os designers de sucesso aprendem a aceitar esse vai e vem, sabendo que a primeira ideia é raramente a última e que o problema em si pode mudar à medida que o projeto evolui. \citep{EllenLupton2013}
+Um problema bem formulado, já é meio caminho andado.(John Dewey)\footnote{ John Dewey (Burlington, Vermont, 20 de outubro de 1859 — 1 de junho de 1952) foi um filósofo, pedagogo e pedagogista norte-americano. É considerado o expoente máximo da escola progressiva norte-americana.}
+%--- Figura ----
+\begin{figure}[H] % H=  fix the figure here
+ \caption{A Imersão pode ser dividida em duas etapas: Preliminar e em Profundidade (Vianna 2012).}
+ \centering
+  \includegraphics[width=0.45\textwidth]%
+  {MR2.png}% picture filename h!=here
+\end{figure}
+% ---- Fim figura ---
+
+\subsection{Análise e síntese}
+
+\indent Etapa de análise e organização das informações coletadas. Assim é possível obter padrões e criar desafios que auxiliem na compreensão do problema.\citep{Vianna2012}
+\newline \indent Na definição do problema é importante a elaboração de entrevistas. Os designers conversam com os clientes e outros interessados para saber mais sobre os desejos e as necessidades das pessoas. Aqui também se aplica o brainstorming com os interessados para tentar avaliar se já têm alguma proposta de solução em mente, ou qual a sua perspectiva do rumo para a solução.\citep{EllenLupton2013}
+\newline A ideia certa é muitas vezes o oposto da óbvia. (Alex F. Osborn)\footnote{Alex Faickney Osborn (Bronx, Nova Iorque, 24 de maio de 1888 — 4 de maio de 1966) foi um publicitário dos Estados Unidos. Foi o autor de uma importante técnica de criatividade denominada brainstorming. }
+
+\subsection{Idealização}
+
+\indent Nessa fase, o objetivo é a geração de ideias inovadoras para o tema do projeto. Para isso, são utilizadas ferramentas como brainstorming e workshop de cocriação.\citep{Vianna2012}
+\newline \indent A geração de ideias tende a ser o processo mais criativo ou 'fora da caixa' relativamente ao entendimento mental da questão. Para auxiliar o processo criativo à alguns processos de auxílio, mas que cada pessoa pode adotar os processos que melhores resultados lhe proporciona. Três deles são apresentados como exemplo:
+\newline \indent\ 1- Verbos de ação: uma forma divertida de produzir propostas visuais rapidamente é aplicar verbos de ação a uma ideia básica. Partindo de um símbolo iónico de uma casa (por exemplo), a designer transforma a imagem com ações como ampliar, reduzir, esticar, achatar e dissecar.
+\newline \indent\ 2- Brain dumping visual: os designers criam diversos tratamentos tipográficos de uma imagem e agrupam esses tratamentos para encontrar a melhor forma para o projeto.\citep{EllenLupton2013}
+\newline \indent\ 3- Mapas mentais \footnote{Tony Buzan é um escritor inglês, responsável pela sistematização dos mapas mentais. Nascido a 2 de Junho de 1942, Tony Buzan pode ser dito o inventor dos mapas mentais.}:
+são também conhecidos como "pensamento radiante", é uma forma de pesquisa mental que permite aos designers explorar rapidamente o objetivo de um dado problema, tópico ou assunto. Partindo de um termo ou ideia central, o designer rapidamente mapeia as imagens e propostas associadas.\citep{EllenLupton2013}
+%--- Figura ----
+\newline
+\begin{figure}[H] % H=  fix the figure here
+ \caption{Geração Ideias métodos: Verbos ação e Brain Dumping Visual  (Ellen Lupton 2013).}
+ \centering
+  \includegraphics[width=0.45\textwidth]%
+  {MR3.png}% picture filename
+\end{figure}
+% ---- Fim figura ---
+
+\subsection{Prototipagem}
+
+\indent É o momento de tirar as ideias do papel. O protótipo vai nos ajudar na validação das ideias geradas.\citep{Vianna2012}
+\newline Segundo \citep{Brown2008}\footnote{Tim Brown é o CEO e presidente da IDEO. O primeiro e mais genial protótipo da IDEO foi criado quando a empresa era composta de oito designers e colaram a esfera de uma embalagem de desodorante roll-on na base de uma manteigueira de plástico. Não demorou muito para a Apple Computer entregar seu primeiro mouse.}, o que distingue uma organização que aplica a metodologia do Design Thinking é o número de protótipos desenvolvidos a partir do ciclo de etapas disponíveis, que geram a possibilidade de comparação de outros projetos com projetos atuais, proporcionando assim a melhoria e a continuidade do projeto. Assim, revela-se a necessidade de frequentemente inovar para não perder espaço no mercado, conforme evidencia a afirmação do CEO da Apple Tim Cook: "Sou velho o suficiente para me lembrar de quando a Nokia tinha margens de lucro de 25 por cento e não tinha como ela perder a liderança.\citep{Cook2013}
+\newline \indent Algumas formas de multiplicar ou melhorar o protótipo é usar técnicas de Colaboração e Mockup.
+\newline Na colaboração compartilhamos com outra equipa de design a ideia base definida no passo anterior, para explorar as maneiras em que a forma poderia ser alterada pelos usuários.
+\newline Um Mockup é um modelo em escala ou de tamanho real de algum projeto ou objeto, utilizado para demonstração, avaliação de design ou outro propósito qualquer em que seja adequado. São utilizados principalmente por designers para adquirir um feedback de seus clientes sobre um produto em criação. \citep{EllenLupton2013}
+\newline \indent Nem todas as ideias e protótipos serão aproveitados. Devem ser avaliadas as restrições impostas, quer sejam restrições de orçamento, restrições do cliente, ou restrições técnicas.
+\newline Segundo \citep{Brown2008} ,os projetos de design apresentam algumas restrições, que afetam a disposição e a aceitação que compõem as etapas do Design Thinking. Algumas restrições descritas estão ligadas a três critérios: \newline \indent 1-praticabilidade (o que em um futuro próximo é possível ser funcional), 
+\newline \indent 2-viabilidade (o que se encaixa no modelo de negócios da organização) e 
+\newline \indent 3-desejabilidade (o que desperta o interesse e faz sentido para as pessoas), tornando-se ideal buscar um equilíbrio entre as restrições.
+
+\subsection{O ciclo continua}
+\indent O design é um processo contínuo. Depois que uma equipa desenvolve o projeto, este é implementado, testado e revisado. A produção de Kits pode acelerar este processo pois permite à equipe obter feedback do seu público, enquanto que os usuários também se permitem a dar as suas contribuições visuais, testes e deteção de erros, expandindo assim a abrangência da aceitação e elevando de uma forma fácil o marketing do projeto. \citep{EllenLupton2013}
+\newline \indent Este processo é bastante utilizado na industria de software, quando são disponibilizadas versões Beta para avaliação e testes de usuários.
+
+%------------------------------------------------
+
+\section{Conclusão}
+
+Thomas Edison\footnote{Thomas Alva Edison (Milan, Ohio, 11 de fevereiro de 1847 — West Orange, Nova Jérsei, 18 de outubro de 1931) foi um empresário dos Estados Unidos que patenteou e financiou o desenvolvimento de muitos dispositivos importantes de grande interesse industrial. Foi um dos primeiros a aplicar os princípios da produção maciça ao processo da invenção. Na sua vida, Thomas Edison registrou 2 332 patentes. O fonógrafo foi uma de suas principais invenções.} representa o que muitos pensamos como uma era de ouro da inovação americana - um momento em que novas idéias transformaram todos os aspectos de nossas vidas. A necessidade de transformação é maior agora do que nunca. Não importa onde olhemos, vemos problemas que podem ser resolvidos apenas através da inovação: cuidados de saúde inabordáveis ou indisponíveis, bilhões de pessoas que tentam viver apenas alguns dólares por dia, uso de energia que supera a capacidade do planeta em apoiá-lo, sistemas educacionais que falham, empresas cujos mercados tradicionais são interrompidos por novas tecnologias ou mudanças demográficas. Esses problemas têm pessoas em seu coração. Eles exigem uma abordagem centrada no ser humano, criativa, iterativa e prática para encontrar as melhores idéias e soluções definitivas. O pensamento de design é apenas uma abordagem da inovação.\citep{Brown2008}
+\newline \indent Ao nível das soluções que adotamos no desenvolvimento de software, o design thinking aplica-se com muita propriedade como metodologia que nos pode auxiliar na busca de soluções, sejam técnicas, de design gráfico, ou na interação Homem-Máquina. Talvez seja um dos maiores desafios a aplicação de soluções inovadoras na interface Homem-Maquina. Cada vez mais se pensa na massificação das tecnologias e devemos pensá-las com:
+\newline \indent a) acessibilidade para todos os tipos de utilizadores, incluindo com definiências; 
+\newline \indent b) para todos os setores etários, sendo a terceira idade um dos grandes desafios, dado que na sua maioria tem pouca literacidade informática, e com a idade vai perdendo alguma faculdades; 
+\newline \indent c) com segurança, dado que atualmente o acesso e a segurança das informações são um problema global.
+\newline \indent A criatividade e simplicidade terão de ser incorporadas cada vez mais nos produtos desenvolvidos, criando equipamentos simples de usar, sem necessidade de manuais, e sem necessidade de formação de uso. O nosso esforço de massificação do uso das tecnologias não pode ser perdido no desespero da deficiente usabilidade, na pouca atratividade, na pouca ergonomia, ou no elevado custo mesmo.
+\newline \indent Há vários exemplos de aplicação da metodologia também na área hospitalar, em que se chegou à conclusão que muito do descontentamento e sofrimento dos pacientes e acompanhantes, durante as consultas ou internamento, nem eram relacionados à doença. Fatores externos acabavam por influenciar o paciente e avaliar uma má prestação do serviço hospitalar. Realmente havia má prestação do serviço como um todo, mas a solução passava por resolver questões mais simples, como dificuldades de estacionamento, falta de coordenação no encaminhamento dos doentes quando estes não conhecem o hospital e a sua rotina, demora na espera de consulta.\citep{TimeMJV2017} Isto leva-nos a olhar para os problemas, como uma abordagem geral onde contribuem várias valências do conhecimento, onde nem sempre o problema é técnico ou da especialidade avaliada, mas é colocado no contexto como se fosse. As ideias de solução de problemas paralelos ao contexto influenciam positivamente o problema principal.
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+%\begin{thebibliography}{9} % Bibliography - this is intentionally simple in this template
+% catalogação manual de Bibliografia
+%\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
+%Figueredo, A.~J. and Wolf, P. S.~A. (2009).
+%\newblock Assortative pairing and life history strategy - a cross-cultural
+%  study.
+%\newblock {\em Human Nature}, 20:317--330.
+ 
+%\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+% catalogação automatica de Bibliografia
+\bibliographystyle{apa} 
+%\bibliographystyle{abbrv}  % estilo enumeradas na sequencia que aparecem no texto 
+\bibliography{Refs} % Neste ponto vai apresentar as referencias bibliograficas 
+
+\end{document}
